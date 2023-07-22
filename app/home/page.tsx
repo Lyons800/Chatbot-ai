@@ -7,23 +7,23 @@ import Spotlight from '../../components/spotlight';
 export default function HomePage() {
     const [isHeroVisible, setIsHeroVisible] = useState(true);
   
-    useEffect(() => {
-      const handleKeydown = (event: { key: string; }) => {
-        if (event.key === ' ') {
-          setIsHeroVisible(false);
-        }
-      };
+    // useEffect(() => {
+    //   const handleKeydown = (event: { key: string; }) => {
+    //     if (event.key === ' ') {
+    //       setIsHeroVisible(false);
+    //     }
+    //   };
   
-      window.addEventListener('keydown', handleKeydown);
+    //   window.addEventListener('keydown', handleKeydown);
   
-      return () => {
-        window.removeEventListener('keydown', handleKeydown);
-      };
-    }, []);
+    //   return () => {
+    //     window.removeEventListener('keydown', handleKeydown);
+    //   };
+    // }, []);
   
-    const handleConnectClick = () => {
-      setIsHeroVisible(false);
-    };
+    // const handleConnectClick = () => {
+    //   setIsHeroVisible(false);
+    // };
 
 
   return (
@@ -50,7 +50,7 @@ export default function HomePage() {
             </div>
             <div
               className="Button inline-flex h-12 w-[174px] items-center justify-center gap-2.5 rounded-[72px] bg-neutral-200 px-4 py-2"
-              onClick={handleConnectClick}
+            //   onClick={handleConnectClick}
             >
               <div className="Continue text-base font-medium leading-normal text-black">Connect</div>
             </div>
