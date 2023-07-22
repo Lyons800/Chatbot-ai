@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react'
 import { GraphCanvas } from 'reagraph'
 import { useReadCypher } from 'use-neo4j'
 
+
+
 export const KGraph = () => {
   const [nodes, setNodes] = useState([])
   const [edges, setEdges] = useState([])
